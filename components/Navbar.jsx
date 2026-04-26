@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 
+import Image from "next/image";
 
 const navLinks = [
   { label: 'Home',         href: '/' },
@@ -52,10 +53,10 @@ export default function Navbar() {
 
       {/* Logo */}
       <Link href="/" className="flex select-none justify-items-center items-center gap-2 group">
-        {/* <Icon className="h-10 w-10 text-(--color-text-primary) group-hover:scale-105 group-hover:text-(--color-accent) group-hover:drop-shadow-[0_0_12px_var(--color-accent)]" /> */}
-        <span className="text-lg text-(--color-text-primary) group-hover:text-(--color-accent) uppercase font-medium group-hover:drop-shadow-[0_0_12px_var(--color-accent)]">
+        <Image src='/logo.png' alt='logo'  width={150} height={80}/>
+        {/* <span className="text-lg text-(--color-text-primary) group-hover:text-(--color-accent) uppercase font-medium group-hover:drop-shadow-[0_0_12px_var(--color-accent)]">
           Lollykrown
-        </span>
+        </span> */}
       </Link>
 
       {/* Desktop links */}

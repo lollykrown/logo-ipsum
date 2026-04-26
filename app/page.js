@@ -1,8 +1,18 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import { IoLocationSharp } from "react-icons/io5";
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
+const navLinks = [
+  { label: 'Home',         href: '/' },
+//   { label: 'Industries',   href: '/industries' },
+  { label: 'Featured Insights', href: '/insights' },
+  { label: 'Contact Us',   href: '/Contact' },
+  { label: 'About Us',     href: '/about' },
+  { label: 'Careers',      href: '/careers' },
+];
 
 export default function Home() {
   return (
@@ -232,6 +242,30 @@ export default function Home() {
         </div>
       </div>
     </section>
+    <footer className="bg-white p-8">
+      <div className="flex flex-col md:flex-row justify-between">
+        <div className="max-w-md md:max-w-lg xl:max-w-xl">
+          <Image src='/logo.png' alt='logo' className="my-4" width={180} height={100}/>
+          <p>Vivamus arcu felis bibendum ut tristique et. Diam in arcu cursus euismod quis. Vivamus arcu felis bibendum ut tristique et egestas quis ipsum. Orci porta non pulvinar neque laoreet suspendisse interdum. Pharetra convallis posuere morbi leo. Faucibus ornare suspendisse sed nisi lacus sed.</p>
+        </div>
+        <div className="flex flex-row-reverse flex-wrap gap-2 items-center max-w-xs justify-around my-auto flex-end">
+          {navLinks.map((n,i)=> (
+            <Link href="/" key={i} className="text-black hover:underline">{n.label}</Link>
+          ))}
+          </div>
+      </div>
+        <div className="flex justify-end gap-6 border-b border-black/50 pb-7">
+          <FaFacebookF className="w-5 h-5 hover:scale-110 text-[#FFB400]"/>
+          <FaTwitter className="w-5 h-5 hover:scale-110 text-[#FFB400]"/>
+          <FaLinkedinIn className="w-5 h-5 hover:scale-110 text-[#FFB400]"/>
+        </div>
+        <div className="flex justify-between mt-7">
+          <p className="text-xs">All Rights Reserved</p>
+          <p className="text-xs">© 2026 Corporate Company</p>
+
+        </div>
+
+    </footer>
 
     </main>
   );
