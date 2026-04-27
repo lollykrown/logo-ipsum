@@ -46,19 +46,19 @@ export default function Home() {
         <div className="bg-(--color-bg)/90 h-2/5">
           <div className="grid grid-cols-2 grid-rows-2 mt-auto h-full text-white">
             <div className="p-6 border-[0.5px] border-gray-400 flex flex-col justify-center px-8 md:px-12">
-              <p className="text-3xl font-bold">Audit and Assurance</p>
+              <p className="text-2xl md:text-3xl font-bold">Audit and Assurance</p>
               <div className="w-9 bg-(--color-yellow-darker) rounded h-1 mt-1"></div>
             </div>
             <div className="p-6 border-[0.5px] border-gray-400 flex flex-col justify-center px-8 md:px-12">
-              <p className="text-3xl font-bold">Advisory</p>
+              <p className="text-2xl md:text-3xl font-bold">Advisory</p>
               <div className="w-9 bg-(--color-yellow-darker) rounded h-1 mt-1"></div>
             </div>
             <div className="p-6 border-[0.5px] border-gray-400 flex flex-col justify-center px-8 md:px-12">
-              <p className="text-3xl font-bold">Tax and Compliance</p>
+              <p className="text-2xl md:text-3xl font-bold">Tax and Compliance</p>
               <div className="w-9 bg-(--color-yellow-darker) rounded h-1 mt-1"></div>
             </div>
             <div className="p-6 border-[0.5px] border-gray-400 flex flex-col justify-center px-8 md:px-12">
-              <p className="text-3xl font-bold">Outsourcing and Managed Services</p>
+              <p className="text-2xl md:text-3xl font-bold">Outsourcing and Managed Services</p>
               <div className="w-9 bg-(--color-yellow-darker) rounded h-1 mt-1"></div>
             </div>
           </div>
@@ -86,12 +86,12 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-white col-span-8 md:col-span-5 ">
-        <div className="py-20 px-10">
+        <div className="py-20 px-6 md:px-10">
           <h4 className="font-bold text-3xl mb-2">Delivering lasting results making difference</h4>
           <div className="w-8 bg-(--color-yellow-dark) h-1 rounded"></div>
           <div className="flex gap-4 mt-12">
-            <p className="flex-1 widest leading-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar elementum integer enim neque. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. </p>
-            <p className="flex-1 widest leading-8">Vivamus arcu felis bibendum ut tristique et. Diam in arcu cursus euismod quis. Vivamus arcu felis bibendum ut tristique et egestas quis ipsum. Orci porta non pulvinar neque laoreet suspendisse interdum. Pharetra convallis posuere morbi leo. Faucibus ornare suspendisse sed nisi lacus sed.</p>
+            <p className="flex-1 widest md:leading-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar elementum integer enim neque. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. </p>
+            <p className="flex-1 widest md:leading-8">Vivamus arcu felis bibendum ut tristique et. Diam in arcu cursus euismod quis. Vivamus arcu felis bibendum ut tristique et egestas quis ipsum. Orci porta non pulvinar neque laoreet suspendisse interdum. Pharetra convallis posuere morbi leo. Faucibus ornare suspendisse sed nisi lacus sed.</p>
           </div>
         </div>
         <div className="bg-(--color-blue-dark) text-white flex items-center gap-12 py-8 px-10 font-bold">
@@ -248,13 +248,13 @@ export default function Home() {
           <Image src='/logo.png' alt='logo' className="my-4" width={180} height={100}/>
           <p>Vivamus arcu felis bibendum ut tristique et. Diam in arcu cursus euismod quis. Vivamus arcu felis bibendum ut tristique et egestas quis ipsum. Orci porta non pulvinar neque laoreet suspendisse interdum. Pharetra convallis posuere morbi leo. Faucibus ornare suspendisse sed nisi lacus sed.</p>
         </div>
-        <div className="flex flex-row-reverse flex-wrap gap-2 items-center max-w-xs justify-around my-auto flex-end">
+        <div className="flex flex-row-reverse mt-4 md:mt-0 flex-wrap gap-2 items-center max-w-xs justify-around my-auto flex-end">
           {navLinks.map((n,i)=> (
             <Link href="/" key={i} className="text-black hover:underline">{n.label}</Link>
           ))}
           </div>
       </div>
-        <div className="flex justify-end gap-6 border-b border-black/50 pb-7">
+        <div className="flex justify-end gap-6 border-b border-black/50 mt-4 md:mt-0 pb-7">
           <FaFacebookF className="w-5 h-5 hover:scale-110 text-[#FFB400]"/>
           <FaTwitter className="w-5 h-5 hover:scale-110 text-[#FFB400]"/>
           <FaLinkedinIn className="w-5 h-5 hover:scale-110 text-[#FFB400]"/>
